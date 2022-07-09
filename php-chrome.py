@@ -10,7 +10,6 @@ php_bin = os.path.join(work_dir, 'php-bin', 'php.exe')
 www_dir = os.path.join(work_dir, 'www')
 profile_directory = os.path.join(tempfile.gettempdir(), 'php-chrome-profile')
 
-
 # start php server
 php_server = subprocess.Popen(
     php_bin + ' -S ' + '127.0.0.1:8001' + ' -t ' + www_dir)
@@ -18,7 +17,7 @@ php_server = subprocess.Popen(
 # start chromiun and wait
 chromium_args = [
     '--new-window',
-    '--window-size=800,600',
+    '--window-size=980,600',
     '--disable-extensions',
     '--disable-features=Translate',
     '--disable-sync',
